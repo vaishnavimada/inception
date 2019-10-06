@@ -205,7 +205,7 @@ public class ActiveLearningSidebar
         if (aAnnotationPage.getMetaData(CURRENT_AL_USER_STATE) == null || predictions == null) {
             ActiveLearningUserState alState = new ActiveLearningUserState();
             alState.setStrategy(new UncertaintySamplingStrategy());
-            alStateModel.setObject(alState);;
+            alStateModel.setObject(alState);
         }
         
         mainContainer = new WebMarkupContainer(CID_MAIN_CONTAINER);

@@ -1232,7 +1232,7 @@ public class RecommendationServiceImpl
                                 committedKey.getUser(), project, 
                                 "Committed dirty CAS at end of request");
                     }
-                };
+                }
             };
         }
         

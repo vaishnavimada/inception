@@ -86,7 +86,7 @@ public class ConceptFeatureSupportTest
         
         assertThat(sut.unwrapFeatureValue(feat1, null, referenceHandle)).isEqualTo("id");
         assertThat(sut.unwrapFeatureValue(feat1, null, "id")).isEqualTo("id");
-        assertThat(sut.unwrapFeatureValue(feat1, null, null)).isNull();;
+        assertThat(sut.unwrapFeatureValue(feat1, null, null)).isNull();
         assertThatThrownBy(() -> sut.unwrapFeatureValue(feat1, null, new Object()))
                 .isInstanceOf(IllegalArgumentException.class);
     }

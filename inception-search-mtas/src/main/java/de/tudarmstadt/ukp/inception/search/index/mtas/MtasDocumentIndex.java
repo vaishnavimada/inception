@@ -628,13 +628,13 @@ public class MtasDocumentIndex
                             + "user: {} - indexWriter was null",
                     project.getName(), aSourceDocumentId, aAnnotationDocumentId, aUser);
         }
-    };
+    }
 
     @Override
     public void indexDocument(SourceDocument aDocument, CAS aCas) throws IOException
     {
         indexDocument(aDocument.getName(), aDocument.getId(), -1, "", aCas);
-    };
+    }
 
     @Override
     public void indexDocument(AnnotationDocument aDocument, CAS aCas) throws IOException
@@ -643,7 +643,7 @@ public class MtasDocumentIndex
         indexDocument(aDocument.getName(), aDocument.getDocument().getId(), aDocument.getId(),
                 aDocument.getUser(), aCas);
         log.debug("***** End of Indexing annotation document");
-    };
+    }
 
     /**
      * Remove document from the index

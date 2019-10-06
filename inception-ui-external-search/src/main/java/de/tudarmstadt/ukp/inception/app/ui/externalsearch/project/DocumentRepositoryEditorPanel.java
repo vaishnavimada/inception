@@ -140,13 +140,13 @@ public class DocumentRepositoryEditorPanel
             protected void onAfterSubmit(AjaxRequestTarget aTarget)
             {
                 actionSave(aTarget);
-            };
+            }
             
             @Override
             protected void onError(AjaxRequestTarget aTarget)
             {
                 aTarget.addChildren(getPage(), IFeedback.class);
-            };
+            }
         });
         form.add(new LambdaAjaxLink("delete", this::actionDelete)
                 .onConfigure(_this -> _this.setVisible(form.getModelObject().getId() != null)));

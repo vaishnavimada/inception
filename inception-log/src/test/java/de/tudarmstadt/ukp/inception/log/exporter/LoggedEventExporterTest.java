@@ -126,7 +126,7 @@ public class LoggedEventExporterTest
         ArgumentCaptor<LoggedEvent> captor = runExportImportAndFetchEvents(zipFile);
 
         // Check that import was successful but not events have been imported
-        assertThat(captor.getAllValues()).isEmpty();;
+        assertThat(captor.getAllValues()).isEmpty();
     }
     
     private List<SourceDocument> documents()

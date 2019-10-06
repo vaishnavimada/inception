@@ -295,7 +295,7 @@ export default class AnnotationContainer {
   importAnnotations041 (tomlObject, tomlIndex, readOnly, getColor) {
 
     // order is important.
-    ;['spans', 'relations'].forEach(key => {
+    ['spans', 'relations'].forEach(key => {
       const objs = tomlObject[key]
       if (Array.isArray(objs)) {
         objs.forEach(obj => {

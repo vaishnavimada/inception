@@ -135,7 +135,7 @@ public class MtasDocumentIndexTest
         {
             String methodName = aDescription.getMethodName();
             System.out.printf("\n=== " + methodName + " =====================\n");
-        };
+        }
     };
     
     @Before

@@ -85,7 +85,7 @@ public class KnowledgeBaseServiceRemoteTest
         {
             String methodName = aDescription.getMethodName();
             System.out.printf("\n=== " + methodName + " =====================\n");
-        };
+        }
     };
 
     @Rule

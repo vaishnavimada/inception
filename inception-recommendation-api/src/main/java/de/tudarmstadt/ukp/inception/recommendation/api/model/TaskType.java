@@ -21,5 +21,5 @@ public class TaskType
 {
     public enum Type {
             SELECTION, TRAINING_AND_PREDICTION
-    };
+    }
 }
