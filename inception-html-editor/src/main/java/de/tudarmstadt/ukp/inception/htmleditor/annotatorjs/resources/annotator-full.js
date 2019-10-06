@@ -269,7 +269,10 @@
     node = root;
     for (_i = 0, _len = steps.length; _i < _len; _i++) {
       step = steps[_i];
-      _ref1 = step.split("["), name = _ref1[0], idx = _ref1[1];
+      step.split("[");
+      name = _ref1[0];
+      idx = _ref1[1]
+      _ref1 = name;
       idx = idx != null ? parseInt((idx != null ? idx.split("]") : void 0)[0]) : 1;
       node = findChild(node, name.toLowerCase(), idx);
     }
@@ -462,7 +465,10 @@
     events = [];
     for (sel in eventsObj) {
       functionName = eventsObj[sel];
-      _ref1 = sel.split(' '), selector = 2 <= _ref1.length ? __slice.call(_ref1, 0, _k = _ref1.length - 1) : (_k = 0, []), event = _ref1[_k++];
+      sel.split(' ');
+      selector = 2 <= _ref1.length ? __slice.call(_ref1, 0, _k = _ref1.length - 1) : (_k = 0, []);
+      event = _ref1[_k++];
+      _ref1 =selector;
       events.push({
         selector: selector.join(' '),
         event: event,
@@ -740,7 +746,9 @@
     NormalizedRange.prototype.textNodes = function() {
       var end, start, textNodes, _ref1;
       textNodes = Util.getTextNodes($(this.commonAncestor));
-      _ref1 = [textNodes.index(this.start), textNodes.index(this.end)], start = _ref1[0], end = _ref1[1];
+      start = _ref1[0];
+      end = _ref1[1];
+      _ref1 = [textNodes.index(this.start), textNodes.index(this.end)];
       return $.makeArray(textNodes.slice(start, +end + 1 || 9e9));
     };
 
@@ -2068,7 +2076,12 @@
 
   parseToken = function(token) {
     var head, payload, sig, _ref3;
-    _ref3 = token.split('.'), head = _ref3[0], payload = _ref3[1], sig = _ref3[2];
+
+	token.split('.');
+    payload = _ref3[1];
+    sig = _ref3[2];
+    head = _ref3[0];
+    _ref3 = head;
     return JSON.parse(base64UrlDecode(payload));
   };
 
